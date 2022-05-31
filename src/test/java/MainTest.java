@@ -90,7 +90,6 @@ class MainTest {
     }
 
     @Test
-    @DisplayName("Check Date")
     void checkDateUTCID01() {
         assertEquals(false, Main.checkDate(1, 0, 2000));
     }
