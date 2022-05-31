@@ -5,7 +5,7 @@ public class Main {
 
     }
 
-    public int dateInMonth(int month, int year) {
+    public static int dateInMonth(int month, int year) {
         int result = 0;
         switch(month) {
             case 1:
@@ -43,7 +43,7 @@ public class Main {
         return result;
     }
 
-    public boolean checkDate(int day, int month, int year) {
+    public static boolean checkDate(int day, int month, int year) {
         if (month >= 1 && month <= 12) {
             if (day >= 1) {
                 if (day <= dateInMonth(month, year)) {
