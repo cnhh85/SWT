@@ -97,17 +97,17 @@ class MainTest {
 
     @Test
     void checkDateUTCID02() {
-        assertEquals(false, Main.checkDate(1, 13, 2000));      //UTCID02
+        assertEquals(false, Main.checkDate(1, 13, 2000));   //UTCID02
     }
 
     @Test
     void checkDateUTCID03() {
-        assertEquals(true, Main.checkDate(29, 2, 2000));      //UTCID03
+        assertEquals(true, Main.checkDate(29, 2, 2000));    //UTCID03
     }
 
     @Test
     void checkDateUTCID04() {
-        assertEquals(false, Main.checkDate(29, 2, 2022));      //UTCID04
+        assertEquals(false, Main.checkDate(29, 2, 2022));   //UTCID04
     }
 
     @Test
@@ -140,49 +140,40 @@ class MainTest {
         assertEquals(false, Main.checkDate(31, 11, 2000));      //UTCID10
     }
 
+
     @Test
     void checkDateUTCID11() {
-        assertEquals(false, Main.checkDate(30, 11, 3001));      //UTCID11
+        assertEquals(true, Main.checkDate(30, 11, 3000));      //UTCID11
     }
 
     @Test
     void checkDateUTCID12() {
-        assertEquals(true, Main.checkDate(30, 11, 3000));      //UTCID12
+        assertEquals(true, Main.checkDate(30, 11, 1000));      //UTCID12
     }
 
     @Test
     void checkDateUTCID13() {
-        assertEquals(true, Main.checkDate(30, 11, 1000));      //UTCID13
+        assertEquals(true, Main.checkDate(1, 1, 2000));     //UTCID13
     }
 
     @Test
     void checkDateUTCID14() {
-        assertEquals(true, Main.checkDate(1, 1, 2000));     //UTCID14
+        assertEquals(true, Main.checkDate(31, 1, 2000));      //UTCID14
     }
 
     @Test
     void checkDateUTCID15() {
-        assertEquals(true, Main.checkDate(31, 1, 2000));      //UTCID15
+        assertEquals(true, Main.checkDate(1, 1, 2000));      //UTCID15
     }
 
     @Test
     void checkDateUTCID16() {
-        assertEquals(true, Main.checkDate(1, 1, 2000));      //UTCID16
+        assertEquals(true, Main.checkDate(1, 12, 2000));      //UTCID16
     }
 
     @Test
-    void checkDateUTCID17() {
-        assertEquals(true, Main.checkDate(1, 12, 2000));      //UTCID17
-    }
-
-    @Test
-    void checkDateUTCID18() {
-        assertEquals(false, Main.checkDate(30, 11, 999));      //UTCID18
-    }
-
-    @Test
-    void checkDateUTCID19() {
-        assertEquals(false, Main.checkDate(30, 2, 2000));      //UTCID19}
+    void checkDateUTCID117() {
+        assertEquals(false, Main.checkDate(30, 2, 2000));      //UTCID17}
     }
 
 }
